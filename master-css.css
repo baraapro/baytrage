@@ -1,0 +1,58 @@
+@import url("https://baytrage.com/styles/globetrans/css/ebay-global.css");
+@import url("https://baytrage.com/styles/globetrans/css/ebay-css.css");
+@import url("https://fonts.googleapis.com/css?family=Headland+One|Lato:400,400i,700,700i");
+
+.slider {
+		  width: 440px;
+		  position: relative;
+		  padding-top: 420px;
+		  margin: 20px auto;
+		  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+		  text-align: center;
+		}
+		
+		.slider > img {
+		  position: absolute;
+		  left: 0;
+		  right:0;
+		  top: 0;
+		  transition: all 0.5s;
+		  max-width:85%;
+		}
+		
+		.slider input {
+		  display: none;
+		}
+		
+		.slider label {
+		  width: 60px;
+		  margin: 20px 2px;
+		  /*float: left;*/
+		  display:inline-block;
+		  border: 2px solid #999;
+		  cursor: pointer;
+		  transition: all 0.5s;
+		  opacity: 0.6;
+		  box-sizing: border-box;
+		}
+		
+		.slider label img {
+		  width: 100%;
+		  display: block;
+		}
+		
+		.slider input:checked + label {
+		  border-color: #666;
+		  opacity: 1;
+		}
+		
+		.slider input ~ img {
+		  opacity: 0;
+		  transform: scale(1.1);
+		}
+		
+		.slider input:checked + label + img {
+		  opacity: 1;
+		  transform: scale(1);
+		}
+
